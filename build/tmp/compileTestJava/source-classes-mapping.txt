@@ -1,2 +1,0 @@
-com/RestAPITesting/Test/ApiTest.java
- com.RestAPITesting.Test.ApiTest
