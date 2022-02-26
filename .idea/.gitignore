@@ -30,7 +30,6 @@
 *.lock
 gc.properties
 cache.properties
-.idea
 
 
 
