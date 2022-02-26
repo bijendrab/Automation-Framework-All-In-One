@@ -30,7 +30,8 @@
 *.lock
 gc.properties
 cache.properties
-
+build/*
+!build/build.xml
 
 
 
