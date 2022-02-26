@@ -1,0 +1,13 @@
+(Response Body is: Internal Server Error
+ÄiTestResult Fail: [TestResult name=testCreateBookingReturns200 status=FAILURE method=ApiTest.testCreateBookingReturns200()[pri:0, instance:com.RestAPITesting.Test.ApiTest@43f51d15] output={null}]
+ÄiTestResult Fail: [TestResult name=testCreateBookingReturns200 status=FAILURE method=ApiTest.testCreateBookingReturns200()[pri:0, instance:com.RestAPITesting.Test.ApiTest@43f51d15] output={null}]
+»iTestResult: [TestResult name=testCreateTokenReturns200 status=SUCCESS method=ApiTest.testCreateTokenReturns200()[pri:0, instance:com.RestAPITesting.Test.ApiTest@43f51d15] output={null}]
+»iTestResult: [TestResult name=testCreateTokenReturns200 status=SUCCESS method=ApiTest.testCreateTokenReturns200()[pri:0, instance:com.RestAPITesting.Test.ApiTest@43f51d15] output={null}]
+¿iTestResult: [TestResult name=testGetBookingIdsReturns200 status=SUCCESS method=ApiTest.testGetBookingIdsReturns200()[pri:0, instance:com.RestAPITesting.Test.ApiTest@43f51d15] output={null}]
+¿iTestResult: [TestResult name=testGetBookingIdsReturns200 status=SUCCESS method=ApiTest.testGetBookingIdsReturns200()[pri:0, instance:com.RestAPITesting.Test.ApiTest@43f51d15] output={null}]
+¹iTestResult: [TestResult name=testGetBookingReturns200 status=SUCCESS method=ApiTest.testGetBookingReturns200()[pri:0, instance:com.RestAPITesting.Test.ApiTest@43f51d15] output={null}]
+¹iTestResult: [TestResult name=testGetBookingReturns200 status=SUCCESS method=ApiTest.testGetBookingReturns200()[pri:0, instance:com.RestAPITesting.Test.ApiTest@43f51d15] output={null}]
+ßiTestResult: [TestResult name=testGetBookingWithIncorrectAcceptReturns418 status=SUCCESS method=ApiTest.testGetBookingWithIncorrectAcceptReturns418()[pri:0, instance:com.RestAPITesting.Test.ApiTest@43f51d15] output={null}]
+ßiTestResult: [TestResult name=testGetBookingWithIncorrectAcceptReturns418 status=SUCCESS method=ApiTest.testGetBookingWithIncorrectAcceptReturns418()[pri:0, instance:com.RestAPITesting.Test.ApiTest@43f51d15] output={null}]
+»iTestResult: [TestResult name=testHealthCheckReturns201 status=SUCCESS method=ApiTest.testHealthCheckReturns201()[pri:0, instance:com.RestAPITesting.Test.ApiTest@43f51d15] output={null}]
+»iTestResult: [TestResult name=testHealthCheckReturns201 status=SUCCESS method=ApiTest.testHealthCheckReturns201()[pri:0, instance:com.RestAPITesting.Test.ApiTest@43f51d15] output={null}]
