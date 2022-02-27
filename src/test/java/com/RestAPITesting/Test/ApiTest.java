@@ -62,7 +62,7 @@ public class ApiTest {
         assertThat(response.getStatusCode() == 418).isTrue();
     }
 
-    @Test(groups = {"booking_test1"})
+    @Test(groups = {"booking_test"},priority = 6)
     public void testCreateBookingReturns200() {
         BookingDates dates = BookingDates.builder()
                 .setCheckin(new Date())

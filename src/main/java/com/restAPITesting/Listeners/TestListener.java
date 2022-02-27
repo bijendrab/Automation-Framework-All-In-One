@@ -11,6 +11,9 @@ import org.testng.ITestListener;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 
+import java.util.Arrays;
+import java.util.List;
+
 public final class TestListener implements ITestListener {
     private static final ExtentReports REPORT = ExtentManager.createExtentReports();
 
@@ -29,8 +32,10 @@ public final class TestListener implements ITestListener {
         //ExtentReports log operation for passed tests.
         System.out.println("iTestResult Pass: "+ iTestResult);
         //String testData = iTestResult.getParameters()[0].toString();
+        List<String> GroupNames = Arrays.asList(iTestResult.getMethod().getGroups());
         ExtentTest test = REPORT.createTest(getTestMethodName(iTestResult))
                 .assignCategory(iTestResult.getMethod().getRealClass().getSimpleName())
+                .assignCategory(GroupNames.toString())
                 .pass(String.format("Test Data: %s%n", "Test Case Passed"));
         //getTest().log(Status.PASS, "Test passed");
     }
@@ -41,14 +46,16 @@ public final class TestListener implements ITestListener {
         System.out.println("iTestResult Fail: "+ iTestResult);
         //String testData = iTestResult.getParameters()[0].toString();
         //Get driver from BaseTest and assign to local webdriver variable.
+        List<String> GroupNames = Arrays.asList(iTestResult.getMethod().getGroups());
         ExtentTest test = REPORT.createTest(getTestMethodName(iTestResult))
                 .assignCategory(iTestResult.getMethod().getRealClass().getSimpleName())
-                .fail(String.format("Test Data: %s%n", "Test Case Failed"));
-                /*.fail(iTestResult.getThrowable(),
+                .assignCategory(GroupNames.toString())
+                .fail(String.format("Test Data: %s%n", "Test Case Failed"))
+                .fail(iTestResult.getThrowable(),
                         MediaEntityBuilder.createScreenCaptureFromPath(
                                 String.format("%s%s.png", configuration().baseScreenshotPath(),
                                         iTestResult.getMethod().getMethodName())
-                        ).build());*/
+                        ).build());
 
         //getTest().log(Status.FAIL, "Test Failed");
     }
