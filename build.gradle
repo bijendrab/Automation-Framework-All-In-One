@@ -26,7 +26,24 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.22'
 }
 
-test {
+tasks.withType(Test) {
+    systemProperties = [
+            group: System.getProperty('group', 'booking_test')
+    ]
+}
+
+task runTests(type: Test) {
+    maxHeapSize = "8g"
+    useTestNG() {
+        testLogging.showStandardStreams = true
+        useDefaultListeners = false
+        reports.html.enabled = false
+        listeners << 'com.restAPITesting.Listeners.TestListener'
+        includeGroups System.getProperty('group', 'NONE')
+    }
+}
+
+/*test {
     maxHeapSize = "8g"
     useTestNG() {
         testLogging.showStandardStreams = true
@@ -37,4 +54,4 @@ test {
         //outputDirectory = dir ? file(dir) : file("$buildDir/testng-output")
         includeGroups 'booking_test'
     }
-}
+}*/
