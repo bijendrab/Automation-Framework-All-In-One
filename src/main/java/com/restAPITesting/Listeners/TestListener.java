@@ -27,7 +27,7 @@ public final class TestListener implements ITestListener {
     public void onTestSuccess(ITestResult iTestResult) {
         Log.info(getTestMethodName(iTestResult) + " test is succeed.");
         //ExtentReports log operation for passed tests.
-        System.out.println("iTestResult: "+ iTestResult);
+        System.out.println("iTestResult Pass: "+ iTestResult);
         //String testData = iTestResult.getParameters()[0].toString();
         ExtentTest test = REPORT.createTest(getTestMethodName(iTestResult))
                 .assignCategory(iTestResult.getMethod().getRealClass().getSimpleName())
@@ -43,12 +43,12 @@ public final class TestListener implements ITestListener {
         //Get driver from BaseTest and assign to local webdriver variable.
         ExtentTest test = REPORT.createTest(getTestMethodName(iTestResult))
                 .assignCategory(iTestResult.getMethod().getRealClass().getSimpleName())
-                .fail(String.format("Test Data: %s%n", "Test Case Failed"))
-                .fail(iTestResult.getThrowable(),
+                .fail(String.format("Test Data: %s%n", "Test Case Failed"));
+                /*.fail(iTestResult.getThrowable(),
                         MediaEntityBuilder.createScreenCaptureFromPath(
                                 String.format("%s%s.png", configuration().baseScreenshotPath(),
                                         iTestResult.getMethod().getMethodName())
-                        ).build());
+                        ).build());*/
 
         //getTest().log(Status.FAIL, "Test Failed");
     }
@@ -56,11 +56,11 @@ public final class TestListener implements ITestListener {
     @Override
     public void onTestSkipped(final ITestResult result) {
         ITestNGMethod method = result.getMethod();
-        String testData = result.getParameters()[0].toString();
+        //String testData = result.getParameters()[0].toString();
 
         ExtentTest test = REPORT.createTest(method.getMethodName())
                 .assignCategory(method.getRealClass().getSimpleName())
-                .skip(String.format("Test Data: %s%n", testData));
+                .skip(String.format("Test Data: %s%n", "Test Case Skipped"));
     }
 
     @Override

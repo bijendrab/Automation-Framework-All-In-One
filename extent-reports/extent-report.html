@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Sample Extent Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 26, 2022 09:59:04 pm</span></a>
+<a href="#"><span class="badge badge-primary">Feb 27, 2022 05:52:34 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -98,7 +93,7 @@
           <div class="test-detail">
             <p class="name">testCreateBookingReturns200</p>
             <p class="text-sm">
-              <span>9:59:07 pm</span> / <span>00:00:00:023</span>
+              <span>5:52:44 pm</span> / <span>00:00:00:012</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -107,9 +102,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">testCreateBookingReturns200</h5>
-<span class='badge badge-success'>02.26.2022 9:59:07 pm</span>
-<span class='badge badge-danger'>02.26.2022 9:59:07 pm</span>
-<span class='badge badge-default'>00:00:00:023</span>
+<span class='badge badge-success'>02.27.2022 5:52:44 pm</span>
+<span class='badge badge-danger'>02.27.2022 5:52:44 pm</span>
+<span class='badge badge-default'>00:00:00:012</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -122,78 +117,10 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:59:07 pm</td>
+        <td>5:52:44 pm</td>
         <td>
           Test Data: Test Case Failed
 
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:59:07 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.junit.ComparisonFailure: [HTTP/1.1 500 Internal Server Error] expected:<[2]00> but was:<[5]00>
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at com.RestAPITesting.Test.ApiTest.testCreateBookingReturns200(ApiTest.java:85)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:135)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-</textarea>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='nulltestCreateBookingReturns200.png' src="nulltestCreateBookingReturns200.png">
-    
-    </div></div>
         </td>
       </tr>
   </tbody>
@@ -201,24 +128,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="2"
+        <li class="test-item"  status="pass" test-id="2"
           author=""
           tag="ApiTest"
           device="">
           <div class="test-detail">
-            <p class="name">testCreateBookingReturns200</p>
+            <p class="name">testCreateTokenReturns200</p>
             <p class="text-sm">
-              <span>9:59:07 pm</span> / <span>00:00:00:001</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>5:53:10 pm</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testCreateBookingReturns200</h5>
-<span class='badge badge-success'>02.26.2022 9:59:07 pm</span>
-<span class='badge badge-danger'>02.26.2022 9:59:07 pm</span>
+<h5 class="test-status text-pass">testCreateTokenReturns200</h5>
+<span class='badge badge-success'>02.27.2022 5:53:10 pm</span>
+<span class='badge badge-danger'>02.27.2022 5:53:10 pm</span>
 <span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
@@ -231,79 +158,11 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:59:07 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:53:10 pm</td>
         <td>
-          Test Data: Test Case Failed
+          Test Data: Test Case Passed
 
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:59:07 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.junit.ComparisonFailure: [HTTP/1.1 500 Internal Server Error] expected:<[2]00> but was:<[5]00>
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at com.RestAPITesting.Test.ApiTest.testCreateBookingReturns200(ApiTest.java:85)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:135)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-</textarea>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='nulltestCreateBookingReturns200.png' src="nulltestCreateBookingReturns200.png">
-    
-    </div></div>
         </td>
       </tr>
   </tbody>
@@ -316,9 +175,9 @@
           tag="ApiTest"
           device="">
           <div class="test-detail">
-            <p class="name">testCreateTokenReturns200</p>
+            <p class="name">testGetBookingIdsReturns200</p>
             <p class="text-sm">
-              <span>9:59:12 pm</span> / <span>00:00:00:001</span>
+              <span>5:53:13 pm</span> / <span>00:00:00:001</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -326,9 +185,9 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testCreateTokenReturns200</h5>
-<span class='badge badge-success'>02.26.2022 9:59:12 pm</span>
-<span class='badge badge-danger'>02.26.2022 9:59:12 pm</span>
+<h5 class="test-status text-pass">testGetBookingIdsReturns200</h5>
+<span class='badge badge-success'>02.27.2022 5:53:13 pm</span>
+<span class='badge badge-danger'>02.27.2022 5:53:13 pm</span>
 <span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
@@ -342,7 +201,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:12 pm</td>
+        <td>5:53:13 pm</td>
         <td>
           Test Data: Test Case Passed
 
@@ -358,9 +217,9 @@
           tag="ApiTest"
           device="">
           <div class="test-detail">
-            <p class="name">testCreateTokenReturns200</p>
+            <p class="name">testGetBookingReturns200</p>
             <p class="text-sm">
-              <span>9:59:12 pm</span> / <span>00:00:00:001</span>
+              <span>5:53:15 pm</span> / <span>00:00:00:001</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -368,9 +227,9 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testCreateTokenReturns200</h5>
-<span class='badge badge-success'>02.26.2022 9:59:12 pm</span>
-<span class='badge badge-danger'>02.26.2022 9:59:12 pm</span>
+<h5 class="test-status text-pass">testGetBookingReturns200</h5>
+<span class='badge badge-success'>02.27.2022 5:53:15 pm</span>
+<span class='badge badge-danger'>02.27.2022 5:53:15 pm</span>
 <span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
@@ -384,7 +243,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:12 pm</td>
+        <td>5:53:15 pm</td>
         <td>
           Test Data: Test Case Passed
 
@@ -400,9 +259,9 @@
           tag="ApiTest"
           device="">
           <div class="test-detail">
-            <p class="name">testGetBookingIdsReturns200</p>
+            <p class="name">testGetBookingWithIncorrectAcceptReturns418</p>
             <p class="text-sm">
-              <span>9:59:14 pm</span> / <span>00:00:00:001</span>
+              <span>5:53:16 pm</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -410,10 +269,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testGetBookingIdsReturns200</h5>
-<span class='badge badge-success'>02.26.2022 9:59:14 pm</span>
-<span class='badge badge-danger'>02.26.2022 9:59:14 pm</span>
-<span class='badge badge-default'>00:00:00:001</span>
+<h5 class="test-status text-pass">testGetBookingWithIncorrectAcceptReturns418</h5>
+<span class='badge badge-success'>02.27.2022 5:53:16 pm</span>
+<span class='badge badge-danger'>02.27.2022 5:53:16 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -426,7 +285,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:14 pm</td>
+        <td>5:53:16 pm</td>
         <td>
           Test Data: Test Case Passed
 
@@ -442,9 +301,9 @@
           tag="ApiTest"
           device="">
           <div class="test-detail">
-            <p class="name">testGetBookingIdsReturns200</p>
+            <p class="name">testHealthCheckReturns201</p>
             <p class="text-sm">
-              <span>9:59:14 pm</span> / <span>00:00:00:001</span>
+              <span>5:53:19 pm</span> / <span>00:00:00:001</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -452,9 +311,9 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testGetBookingIdsReturns200</h5>
-<span class='badge badge-success'>02.26.2022 9:59:14 pm</span>
-<span class='badge badge-danger'>02.26.2022 9:59:14 pm</span>
+<h5 class="test-status text-pass">testHealthCheckReturns201</h5>
+<span class='badge badge-success'>02.27.2022 5:53:19 pm</span>
+<span class='badge badge-danger'>02.27.2022 5:53:19 pm</span>
 <span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
@@ -468,259 +327,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:14 pm</td>
-        <td>
-          Test Data: Test Case Passed
-
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="7"
-          author=""
-          tag="ApiTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">testGetBookingReturns200</p>
-            <p class="text-sm">
-              <span>9:59:16 pm</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testGetBookingReturns200</h5>
-<span class='badge badge-success'>02.26.2022 9:59:16 pm</span>
-<span class='badge badge-danger'>02.26.2022 9:59:16 pm</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">ApiTest</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:16 pm</td>
-        <td>
-          Test Data: Test Case Passed
-
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="8"
-          author=""
-          tag="ApiTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">testGetBookingReturns200</p>
-            <p class="text-sm">
-              <span>9:59:16 pm</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testGetBookingReturns200</h5>
-<span class='badge badge-success'>02.26.2022 9:59:16 pm</span>
-<span class='badge badge-danger'>02.26.2022 9:59:16 pm</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">ApiTest</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:16 pm</td>
-        <td>
-          Test Data: Test Case Passed
-
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="9"
-          author=""
-          tag="ApiTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">testGetBookingWithIncorrectAcceptReturns418</p>
-            <p class="text-sm">
-              <span>9:59:26 pm</span> / <span>00:00:00:001</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testGetBookingWithIncorrectAcceptReturns418</h5>
-<span class='badge badge-success'>02.26.2022 9:59:26 pm</span>
-<span class='badge badge-danger'>02.26.2022 9:59:26 pm</span>
-<span class='badge badge-default'>00:00:00:001</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">ApiTest</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:26 pm</td>
-        <td>
-          Test Data: Test Case Passed
-
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="10"
-          author=""
-          tag="ApiTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">testGetBookingWithIncorrectAcceptReturns418</p>
-            <p class="text-sm">
-              <span>9:59:26 pm</span> / <span>00:00:00:001</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testGetBookingWithIncorrectAcceptReturns418</h5>
-<span class='badge badge-success'>02.26.2022 9:59:26 pm</span>
-<span class='badge badge-danger'>02.26.2022 9:59:26 pm</span>
-<span class='badge badge-default'>00:00:00:001</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">ApiTest</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:26 pm</td>
-        <td>
-          Test Data: Test Case Passed
-
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="11"
-          author=""
-          tag="ApiTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">testHealthCheckReturns201</p>
-            <p class="text-sm">
-              <span>10:00:12 pm</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testHealthCheckReturns201</h5>
-<span class='badge badge-success'>02.26.2022 10:00:12 pm</span>
-<span class='badge badge-danger'>02.26.2022 10:00:12 pm</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">ApiTest</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:12 pm</td>
-        <td>
-          Test Data: Test Case Passed
-
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="12"
-          author=""
-          tag="ApiTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">testHealthCheckReturns201</p>
-            <p class="text-sm">
-              <span>10:00:12 pm</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testHealthCheckReturns201</h5>
-<span class='badge badge-success'>02.26.2022 10:00:12 pm</span>
-<span class='badge badge-danger'>02.26.2022 10:00:12 pm</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">ApiTest</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:12 pm</td>
+        <td>5:53:19 pm</td>
         <td>
           Test Data: Test Case Passed
 
@@ -740,63 +347,7 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>2</span>
-</span>
-<p class="name">org.junit.ComparisonFailure</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.junit.ComparisonFailure</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:59:07 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='1'>testCreateBookingReturns200</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:59:07 pm</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>testCreateBookingReturns200</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
@@ -807,17 +358,17 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>10</span>
-<span class='badge log badge-danger'>2</span>
+<span class='badge log pass-bg'>5</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">ApiTest</p>
-<p class="duration text-sm">12 tests</p>
+<p class="duration text-sm">6 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>ApiTest</h4>
-<span status="pass" class='badge log pass-bg'>10 passed</span>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -830,86 +381,44 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>21:59:07 pm</td>
+<td>17:52:44 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>testCreateBookingReturns200</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:59:07 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:53:10 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>testCreateBookingReturns200</a>
+<a href="#" class="linked" test-id='2' id='2'>testCreateTokenReturns200</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>21:59:12 pm</td>
+<td>17:53:13 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>testCreateTokenReturns200</a>
+<a href="#" class="linked" test-id='3' id='3'>testGetBookingIdsReturns200</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>21:59:12 pm</td>
+<td>17:53:15 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>testCreateTokenReturns200</a>
+<a href="#" class="linked" test-id='4' id='4'>testGetBookingReturns200</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>21:59:14 pm</td>
+<td>17:53:16 pm</td>
 <td>
-<a href="#" class="linked" test-id='5' id='5'>testGetBookingIdsReturns200</a>
+<a href="#" class="linked" test-id='5' id='5'>testGetBookingWithIncorrectAcceptReturns418</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>21:59:14 pm</td>
+<td>17:53:19 pm</td>
 <td>
-<a href="#" class="linked" test-id='6' id='6'>testGetBookingIdsReturns200</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>21:59:16 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='7'>testGetBookingReturns200</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>21:59:16 pm</td>
-<td>
-<a href="#" class="linked" test-id='8' id='8'>testGetBookingReturns200</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>21:59:26 pm</td>
-<td>
-<a href="#" class="linked" test-id='9' id='9'>testGetBookingWithIncorrectAcceptReturns418</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>21:59:26 pm</td>
-<td>
-<a href="#" class="linked" test-id='10' id='10'>testGetBookingWithIncorrectAcceptReturns418</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>22:00:12 pm</td>
-<td>
-<a href="#" class="linked" test-id='11' id='11'>testHealthCheckReturns201</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>22:00:12 pm</td>
-<td>
-<a href="#" class="linked" test-id='12' id='12'>testHealthCheckReturns201</a>
+<a href="#" class="linked" test-id='6' id='6'>testHealthCheckReturns201</a>
 </td>
 </tr>
 </tbody>
@@ -929,25 +438,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 26, 2022 09:59:04 pm</h3>
+<h3>Feb 27, 2022 05:52:34 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 26, 2022 10:00:12 pm</h3>
+<h3>Feb 27, 2022 05:53:19 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>10</h3>
+<h3>5</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>2</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -964,11 +473,11 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='83%'>
-<b>10</b> tests passed
+<b>5</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='16%'><b>2</b> tests failed,
+<small data-tooltip='16%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -986,9 +495,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='71%'><b>10</b> events passed</small></div>
+<div><small data-tooltip='83%'><b>5</b> events passed</small></div>
 <div>
-<small data-tooltip='28%'><b>4</b> events failed,
+<small data-tooltip='16%'><b>1</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -1005,7 +514,7 @@
 </div></div>
 <script>
 var timeline = {
-"testCreateBookingReturns200":0.023,"testCreateBookingReturns200":0.001,"testCreateTokenReturns200":0.001,"testCreateTokenReturns200":0.001,"testGetBookingIdsReturns200":0.001,"testGetBookingIdsReturns200":0.001,"testGetBookingReturns200":0,"testGetBookingReturns200":0,"testGetBookingWithIncorrectAcceptReturns418":0.001,"testGetBookingWithIncorrectAcceptReturns418":0.001,"testHealthCheckReturns201":0,"testHealthCheckReturns201":0
+"testCreateBookingReturns200":0.012,"testCreateTokenReturns200":0.001,"testGetBookingIdsReturns200":0.001,"testGetBookingReturns200":0.001,"testGetBookingWithIncorrectAcceptReturns418":0,"testHealthCheckReturns201":0.001
 };
 </script>
 <div class="row">
@@ -1016,8 +525,8 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>ApiTest</td>
-<td>10</td>
-<td>2</td>
+<td>5</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>83.333%</td>
@@ -1049,8 +558,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 10,
-failParent: 2,
+passParent: 5,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -1066,8 +575,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 10,
-failEvents: 4,
+passEvents: 5,
+failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

@@ -22,14 +22,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class ApiTest {
 
-    @Test(groups = {"booking_test"})
+    @Test(groups = {"booking_test"},priority = 1)
     public void testHealthCheckReturns201() {
         Response response = PingApi.healthCheck();
 
         assertThat(response.getStatusCode() == 201).isTrue();
     }
 
-    @Test(groups = {"booking_test"})
+    @Test(groups = {"booking_test"},priority = 2)
     public void testCreateTokenReturns200() {
         Auth auth = Auth.builder()
                 .setUserName(DEFAULT_USER_NAME)
@@ -41,28 +41,28 @@ public class ApiTest {
         assertThat(response.getStatusCode() == 200).isTrue();
     }
 
-    @Test(groups = {"booking_test"})
+    @Test(groups = {"booking_test"},priority = 3)
     public void testGetBookingIdsReturns200() {
         Response response = BookingApi.getBookingIds();
 
         assertThat(response.getStatusCode() == 200).isTrue();
     }
 
-    @Test(groups = {"booking_test"})
+    @Test(groups = {"booking_test"},priority = 4)
     public void testGetBookingReturns200() {
         Response response = BookingApi.getBooking(1, "application/json");
 
         assertThat(response.getStatusCode() == 200).isTrue();
     }
 
-    @Test(groups = {"booking_test"})
+    @Test(groups = {"booking_test"},priority = 5)
     public void testGetBookingWithIncorrectAcceptReturns418() {
         Response response = BookingApi.getBooking(1, "test");
 
         assertThat(response.getStatusCode() == 418).isTrue();
     }
 
-    @Test(groups = {"booking_test"})
+    @Test(groups = {"booking_test1"})
     public void testCreateBookingReturns200() {
         BookingDates dates = BookingDates.builder()
                 .setCheckin(new Date())
