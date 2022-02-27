@@ -27,7 +27,7 @@ dependencies {
 }
 
 test {
-    maxHeapSize = "4g"
+    maxHeapSize = "8g"
     useTestNG() {
         testLogging.showStandardStreams = true
         useDefaultListeners = false
