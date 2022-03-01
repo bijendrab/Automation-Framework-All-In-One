@@ -2,12 +2,11 @@
 BoilerPlate for Automation of Rest API, Web UI and Mobile (In Progress)
 
 
-# Run RestAPI Tests
+# Run RestAPI Tests (Rest Assured with Extent Report)
 
 ./gradlew clean runTests  -Dgroup=booking_test --info  --stacktrace
 
-# Performance Testing
+# Performance Testing (Gatling Scala)
 
-Gatling Java Gradle
+./gradlew clean testLoad
 
-https://medium.com/@arsalaninam/performance-testing-with-gatling-652e2f19bf89
