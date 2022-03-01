@@ -10,3 +10,4 @@ BoilerPlate for Automation of Rest API, Web UI , Mobile and Performance Testing 
 
 ./gradlew clean testLoad
 
+![img.png](img.png)
