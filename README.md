@@ -1,5 +1,5 @@
 # Automation-Framework-All-In-One
-BoilerPlate for Automation of Rest API, Web UI and Mobile (In Progress)
+BoilerPlate for Automation of Rest API, Web UI , Mobile and Performance Testing (WIP)
 
 
 # Run RestAPI Tests (Rest Assured with Extent Report)
