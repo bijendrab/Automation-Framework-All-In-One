@@ -1,13 +1,15 @@
 plugins {
     id 'java'
 }
-
+apply plugin: 'java'
+apply plugin: 'scala'
 group 'org.AutomationFramework'
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
+
 
 dependencies {
     implementation 'org.projectlombok:lombok:1.18.18'
@@ -23,7 +25,17 @@ dependencies {
     implementation group: 'com.fasterxml', name: 'jackson-module-json-org', version: '0.9.1'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.6'
     implementation 'org.projectlombok:lombok:1.18.22'
+    implementation group: 'io.gatling.highcharts', name: 'gatling-charts-highcharts', version: '3.7.4'
+    implementation group: 'org.json', name: 'json', version: '20090211'
     annotationProcessor 'org.projectlombok:lombok:1.18.22'
+}
+
+sourceSets {
+    main {
+        scala {
+            srcDirs = ['src/']
+        }
+    }
 }
 
 tasks.withType(Test) {
@@ -41,6 +53,24 @@ task runTests(type: Test) {
         listeners << 'com.restAPITesting.Listeners.TestListener'
         includeGroups System.getProperty('group', 'NONE')
     }
+}
+
+task testLoad(type: JavaExec) {
+    description = 'Test load with Gatling'
+    group = 'Load Test'
+    classpath = sourceSets.test.runtimeClasspath
+    jvmArgs = [
+            "-Dlogback.configurationFile=${logbackGatlingConfig()}"
+    ]
+    main = 'io.gatling.app.Gatling'
+    args = [
+            '--simulation', 'com.performanceTesting.simulation.CreateUserSimulation',
+            '--results-folder', "./gatling-results"
+    ]
+}
+
+def logbackGatlingConfig() {
+    return sourceSets.test.resources.find { it.name == 'logback-gatling.xml' };
 }
 
 /*test {

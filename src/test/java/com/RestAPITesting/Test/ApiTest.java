@@ -1,7 +1,5 @@
 package com.RestAPITesting.Test;
 
-
-
 import com.restAPITesting.Listeners.TestListener;
 import com.restAPITesting.api.api.AuthApi;
 import com.restAPITesting.api.api.BookingApi;
